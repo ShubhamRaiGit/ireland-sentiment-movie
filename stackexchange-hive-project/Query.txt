@@ -1,0 +1,31 @@
+SELECT 
+*
+FROM 
+(
+SELECT 
+ROW_NUMBER() OVER (ORDER BY VIEWCOUNT DESC) AS RN, 
+Id,
+PostTypeId,
+AcceptedAnswerId,
+ParentId,
+CreationDate,
+DeletionDate,
+Score,
+ViewCount,
+OwnerUserId,
+OwnerDisplayName,
+LastEditorUserId,
+LastEditorDisplayName,
+LastEditDate,
+LastActivityDate,
+Title,
+Tags,
+AnswerCount,
+CommentCount,
+FavoriteCount,
+ClosedDate,
+CommunityOwnedDate,
+ContentLicense
+FROM POSTS WHERE VIEWCOUNT IS NOT NULL
+) AS T
+WHERE RN BETWEEN 200000 AND 200001

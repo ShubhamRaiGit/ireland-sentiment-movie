@@ -1,0 +1,3 @@
+./start_hive.sh
+bin/hiveserver2
+bin/beeline -n cypherhonk-u jdbc:hive2://localhost:10000
