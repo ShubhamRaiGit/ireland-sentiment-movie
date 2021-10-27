@@ -1,0 +1,11 @@
+import pandas as pd
+df = pd.read_csv('stackexchange_export.csv', quotechar='"') 
+# Remove HTML Tags
+df['Body'] = df['Body'].str.replace(r'<[^<>]*>', '', regex=True)
+# Keep only letters  
+df["Body"] = df['Body'].str.replace('[^a-zA-Z]', ' ', regex=True)
+# Remove new line characters
+df["Body"] = df['Body'].replace(r'\n',' ', regex=True) 
+#Export file to be loaded in Hive
+df.to_csv('/home/cypherhonk/cleaned_final.csv', sep=',', encoding='utf-8',index=None)
+! chmod 755 cleaned_final.csv
