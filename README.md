@@ -4,10 +4,11 @@
 
 ## Files
 
-#### 1) Final Assignment Submission.pdf - Final Submission Page.
-2) Folder Code - Consist of Jupyter Notebook which consists of all code lines.
-3) Folder Screenshots - Consist of all screenshots for Google Cloud and Local Deployments
-4) Folder Dataset - Datasets used in assignment
-5) Visualization - Consist of Tableau Packaged Workbook
+#### 1) Assignment 1 - Data Analysis.docx - Final Submission Page.
+#### 2) Folder jupyter-notebook - Notebook consists of all tasks and their output along with comment.
+3) Folder SQL - Consists of all SQL's used
+4) Folder Screenshots - Consist of all screenshots for Google Cloud and Local Deployments
+5) Folder dataset - Datasets used in assignment
+6) Visualization - Consist of Tableau Packaged Workbook
 
 
